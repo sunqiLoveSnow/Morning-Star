@@ -371,7 +371,7 @@ mod tests {
             // assert_eq!(TestModule::balance_of(&alice), 1);
             // assert_eq!(TestModule::total_supply(), 1);
             TestModule::set_approval_for_all(Origin::signed(alice), bob, true);
-            assert_eq!(TestModule::is_approved_for_all((alice,bob)), true);
+            assert_eq!(TestModule::is_approved_for_all((alice, bob)), true);
         });
     }
     #[test]
